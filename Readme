@@ -1,0 +1,39 @@
+📘 React Notes – Viviana Harrizon
+🧠 My personal collection of essential React topics, with examples and commands. Ideal for review, practice, and reference.
+
+📑 Table of Contents
+Installation and Base Project
+JSx
+Components
+Props
+useState
+useEffect
+Events
+Lists and Keys
+Styles in React
+React Router
+API Calls (fetch/axios)
+useContext
+useRef and useReducer
+Best Practices
+Useful Resources
+
+🧠 useContext
+To share global state without prop drilling.
+
+📌 useRef and useReducer
+useRef: DOM references.
+useReducer: an advanced alternative to useState.
+
+🧼 Best Practices
+Small and reusable components.
+Separate logic and presentation.
+Use hooks correctly.
+Unique keys in lists.
+Clear folder organization.
+
+📚 Resources
+React Docs
+React Router
+Vite
+TailwindCSS

@@ -1,0 +1,36 @@
+# node_modules: dependencias que se instalan con npm/yarn
+node_modules/
+
+# build/dist: carpetas de salida, se regeneran en cada build
+dist/
+build/
+
+# logs y errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# entorno local y variables privadas
+.env
+.env.*.local
+
+# editor y sistema operativo
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Cache de herramientas
+.cache/
+.eslintcache
+
+# archivos temporales
+*.local
+*.log
+*.tmp
+
+
+.vite/
+.tailwindcache/
+*.tsbuildinfo
