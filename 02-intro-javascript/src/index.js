@@ -1,28 +1,27 @@
-const persona = {
-  nombre: 'Tony',
-  edad: 45,
-  clave: 'Ironman'
-};
+import heroes, { owner }  from './data/heroes';
+//?imp //import {heroes} from './data/heroes';
+/*npm //*Promesa // new Promise((resolve, reject) => {
+  
+})*/
 
-const {nombre, edad, clave } = persona;
-
-//console.log(nombre);
-/* console.log( persona.nombre );
-   console.log( persona.edad ); */
-
-const useContext = ({ nombre, edad, clave, rango = 'Capitan'}) => {
-  console.log({nombre, edad, rango});
-  return{
-    nombreClave: clave,
-    anios: edad,
-    lating: {
-      lat: 14.234,
-      ing: -12.456,
+/*const getHeroeById = (id) => {
+  return heroes.find((heroe) => {
+    if (heroe.id === id) {
+      return true;
+    }else{
+      return false;
     }
-  }
+  });
 }
+*/
 
-const {nombreClave, anios, lating:{lat,ing}} = useContext( persona );
+/*const getHeroeById = (id) => {
+  return heroes.find((heroe) => heroe.id === id);
+}*/
+const getHeroeById = (id) => heroes.find((heroe) => heroe.id === id);
 
-console.log(nombreClave,anios);
-console.log(lating);
+console.log(getHeroeById(3));
+
+const getHeroesByOwner = (owner) => heroes.filter((heroe) => heroe.owner === owner);
+
+console.log(getHeroesByOwner('DC'));
